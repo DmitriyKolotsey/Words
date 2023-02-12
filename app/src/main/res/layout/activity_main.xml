@@ -1,0 +1,933 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="letter"
+            type="String" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="15dp">
+
+                <ImageView
+                    android:id="@+id/ivGetPrompt"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onClickGetPrompt"
+                    app:srcCompat="@drawable/ic_baseline_help" />
+
+                <TextView
+                    android:id="@+id/tvPromptsCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    android:layout_margin="2dp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_gravity="bottom|end"
+                    android:textSize="11sp"
+                    android:background="@drawable/textview_count_prompts_rounded"
+                    android:text="1" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_default_round_corners"
+                android:elevation="2dp"
+                android:gravity="center"
+                android:paddingHorizontal="25dp"
+                android:paddingVertical="6dp"
+                android:text="@string/app_title_in_game"
+                android:textColor="@color/black"
+                android:textSize="23sp" />
+
+            <ImageView
+                android:id="@+id/ivGoToStatisticScreen"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="onClickGoToStatisticScreen"
+                app:srcCompat="@drawable/ic_baseline_statistic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvFirstWordFirstLetter"
+                    android:layout_width="15dp"
+                    android:layout_height="90dp"
+                    android:layout_marginVertical="2dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/textview_topleft_default_round_corner"
+                    android:padding="2dp"
+                    android:theme="@style/tvWordsByLetters" />
+
+                <TextView
+                    android:id="@+id/tvFirstWordSecondLetter"
+                    android:layout_width="15dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:theme="@style/tvWordsByLetters" />
+
+                <TextView
+                    android:id="@+id/tvFirstWordThirdLetter"
+                    android:layout_width="15dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:theme="@style/tvWordsByLetters" />
+
+                <TextView
+                    android:id="@+id/tvFirstWordFourthLetter"
+                    android:layout_width="15dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:theme="@style/tvWordsByLetters" />
+
+                <TextView
+                    android:id="@+id/tvFirstWordFifthLetter"
+                    android:layout_width="15dp"
+                    android:layout_height="90dp"
+                    android:layout_marginVertical="2dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/textview_topright_default_round_corner"
+                    android:padding="2dp"
+                    android:theme="@style/tvWordsByLetters" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvSecondWordFirstLetter"
+                    android:layout_width="15dp"
+                    android:layout_height="90dp"
+                    android:layout_marginVertical="2dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:theme="@style/tvWordsByLetters" />
+
+                <TextView
+                    android:id="@+id/tvSecondWordSecondLetter"
+                    android:layout_width="15dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:theme="@style/tvWordsByLetters" />
+
+                <TextView
+                    android:id="@+id/tvSecondWordThirdLetter"
+                    android:layout_width="15dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:theme="@style/tvWordsByLetters" />
+
+                <TextView
+                    android:id="@+id/tvSecondWordFourthLetter"
+                    android:layout_width="15dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:theme="@style/tvWordsByLetters" />
+
+                <TextView
+                    android:id="@+id/tvSecondWordFifthLetter"
+                    android:layout_width="15dp"
+                    android:layout_height="90dp"
+                    android:layout_marginVertical="2dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:theme="@style/tvWordsByLetters" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvThirdWordFirstLetter"
+                    android:layout_width="15dp"
+                    android:layout_height="90dp"
+                    android:layout_marginVertical="2dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:theme="@style/tvWordsByLetters" />
+
+                <TextView
+                    android:id="@+id/tvThirdWordSecondLetter"
+                    android:layout_width="15dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:theme="@style/tvWordsByLetters" />
+
+                <TextView
+                    android:id="@+id/tvThirdWordThirdLetter"
+                    android:layout_width="15dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:theme="@style/tvWordsByLetters" />
+
+                <TextView
+                    android:id="@+id/tvThirdWordFourthLetter"
+                    android:layout_width="15dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:theme="@style/tvWordsByLetters" />
+
+                <TextView
+                    android:id="@+id/tvThirdWordFifthLetter"
+                    android:layout_width="15dp"
+                    android:layout_height="90dp"
+                    android:layout_marginVertical="2dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:theme="@style/tvWordsByLetters" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvFourthWordFirstLetter"
+                    android:layout_width="15dp"
+                    android:layout_height="90dp"
+                    android:layout_marginVertical="2dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:theme="@style/tvWordsByLetters" />
+
+                <TextView
+                    android:id="@+id/tvFourthWordSecondLetter"
+                    android:layout_width="15dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:theme="@style/tvWordsByLetters" />
+
+                <TextView
+                    android:id="@+id/tvFourthWordThirdLetter"
+                    android:layout_width="15dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:theme="@style/tvWordsByLetters" />
+
+                <TextView
+                    android:id="@+id/tvFourthWordFourthLetter"
+                    android:layout_width="15dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:theme="@style/tvWordsByLetters" />
+
+                <TextView
+                    android:id="@+id/tvFourthWordFifthLetter"
+                    android:layout_width="15dp"
+                    android:layout_height="90dp"
+                    android:layout_marginVertical="2dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:theme="@style/tvWordsByLetters" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvFifthWordFirstLetter"
+                    android:layout_width="15dp"
+                    android:layout_height="90dp"
+                    android:layout_marginVertical="2dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:theme="@style/tvWordsByLetters" />
+
+                <TextView
+                    android:id="@+id/tvFifthWordSecondLetter"
+                    android:layout_width="15dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:theme="@style/tvWordsByLetters" />
+
+                <TextView
+                    android:id="@+id/tvFifthWordThirdLetter"
+                    android:layout_width="15dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:theme="@style/tvWordsByLetters" />
+
+                <TextView
+                    android:id="@+id/tvFifthWordFourthLetter"
+                    android:layout_width="15dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:theme="@style/tvWordsByLetters" />
+
+                <TextView
+                    android:id="@+id/tvFifthWordFifthLetter"
+                    android:layout_width="15dp"
+                    android:layout_height="90dp"
+                    android:layout_marginVertical="2dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:theme="@style/tvWordsByLetters" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvSixthWordFirstLetter"
+                    android:layout_width="15dp"
+                    android:layout_height="90dp"
+                    android:layout_marginVertical="2dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/textview_bottomleft_default_round_corner"
+                    android:padding="2dp"
+                    android:theme="@style/tvWordsByLetters" />
+
+                <TextView
+                    android:id="@+id/tvSixthWordSecondLetter"
+                    android:layout_width="15dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:theme="@style/tvWordsByLetters" />
+
+                <TextView
+                    android:id="@+id/tvSixthWordThirdLetter"
+                    android:layout_width="15dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:theme="@style/tvWordsByLetters" />
+
+                <TextView
+                    android:id="@+id/tvSixthWordFourthLetter"
+                    android:layout_width="15dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:theme="@style/tvWordsByLetters" />
+
+                <TextView
+                    android:id="@+id/tvSixthWordFifthLetter"
+                    android:layout_width="15dp"
+                    android:layout_height="90dp"
+                    android:layout_marginVertical="2dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/textview_bottomright_default_round_corner"
+                    android:padding="2dp"
+                    android:theme="@style/tvWordsByLetters" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/b1Letter"
+                    style="@style/bLetters"
+                    android:layout_width="25dp"
+                    android:layout_height="42dp"
+                    android:layout_marginVertical="3dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/button_default_round_corners"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onClickEnterLetterInWord"
+                    android:padding="2dp"
+                    android:text="Й" />
+
+                <TextView
+                    android:id="@+id/b2Letter"
+                    style="@style/bLetters"
+                    android:layout_width="25dp"
+                    android:layout_height="42dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/button_default_round_corners"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onClickEnterLetterInWord"
+                    android:padding="2dp"
+                    android:text="Ц" />
+
+                <TextView
+                    android:id="@+id/b3Letter"
+                    style="@style/bLetters"
+                    android:layout_width="25dp"
+                    android:layout_height="42dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/button_default_round_corners"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onClickEnterLetterInWord"
+                    android:padding="2dp"
+                    android:text="У" />
+
+                <TextView
+                    android:id="@+id/b4Letter"
+                    style="@style/bLetters"
+                    android:layout_width="25dp"
+                    android:layout_height="42dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/button_default_round_corners"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onClickEnterLetterInWord"
+                    android:padding="2dp"
+                    android:text="К" />
+
+                <TextView
+                    android:id="@+id/b5Letter"
+                    style="@style/bLetters"
+                    android:layout_width="25dp"
+                    android:layout_height="42dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/button_default_round_corners"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onClickEnterLetterInWord"
+                    android:padding="2dp"
+                    android:text="Е" />
+
+                <TextView
+                    android:id="@+id/b6Letter"
+                    style="@style/bLetters"
+                    android:layout_width="25dp"
+                    android:layout_height="42dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/button_default_round_corners"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onClickEnterLetterInWord"
+                    android:padding="2dp"
+                    android:text="Н" />
+
+                <TextView
+                    android:id="@+id/b7Letter"
+                    style="@style/bLetters"
+                    android:layout_width="25dp"
+                    android:layout_height="42dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/button_default_round_corners"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onClickEnterLetterInWord"
+                    android:padding="2dp"
+                    android:text="Г" />
+
+                <TextView
+                    android:id="@+id/b8Letter"
+                    style="@style/bLetters"
+                    android:layout_width="25dp"
+                    android:layout_height="42dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/button_default_round_corners"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onClickEnterLetterInWord"
+                    android:padding="2dp"
+                    android:text="Ш" />
+
+                <TextView
+                    android:id="@+id/b9Letter"
+                    style="@style/bLetters"
+                    android:layout_width="25dp"
+                    android:layout_height="42dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/button_default_round_corners"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onClickEnterLetterInWord"
+                    android:padding="2dp"
+                    android:text="Щ" />
+
+                <TextView
+                    android:id="@+id/b10Letter"
+                    style="@style/bLetters"
+                    android:layout_width="25dp"
+                    android:layout_height="42dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/button_default_round_corners"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onClickEnterLetterInWord"
+                    android:padding="2dp"
+                    android:text="З" />
+
+                <TextView
+                    android:id="@+id/b11Letter"
+                    style="@style/bLetters"
+                    android:layout_width="25dp"
+                    android:layout_height="42dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/button_default_round_corners"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onClickEnterLetterInWord"
+                    android:padding="2dp"
+                    android:text="Х" />
+
+                <TextView
+                    android:id="@+id/b12Letter"
+                    style="@style/bLetters"
+                    android:layout_width="25dp"
+                    android:layout_height="42dp"
+                    android:layout_marginVertical="3dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/button_default_round_corners"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onClickEnterLetterInWord"
+                    android:padding="2dp"
+                    android:text="Ъ" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/b13Letter"
+                    style="@style/bLetters"
+                    android:layout_width="25dp"
+                    android:layout_height="42dp"
+                    android:layout_marginVertical="3dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="3dp"
+                    android:background="@drawable/button_default_round_corners"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onClickEnterLetterInWord"
+                    android:padding="2dp"
+                    android:text="Ф" />
+
+                <TextView
+                    android:id="@+id/b14Letter"
+                    style="@style/bLetters"
+                    android:layout_width="25dp"
+                    android:layout_height="42dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/button_default_round_corners"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onClickEnterLetterInWord"
+                    android:padding="2dp"
+                    android:text="Ы" />
+
+                <TextView
+                    android:id="@+id/b15Letter"
+                    style="@style/bLetters"
+                    android:layout_width="25dp"
+                    android:layout_height="42dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/button_default_round_corners"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onClickEnterLetterInWord"
+                    android:padding="2dp"
+                    android:text="В" />
+
+                <TextView
+                    android:id="@+id/b16Letter"
+                    style="@style/bLetters"
+                    android:layout_width="25dp"
+                    android:layout_height="42dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/button_default_round_corners"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onClickEnterLetterInWord"
+                    android:padding="2dp"
+                    android:text="А" />
+
+                <TextView
+                    android:id="@+id/b17Letter"
+                    style="@style/bLetters"
+                    android:layout_width="25dp"
+                    android:layout_height="42dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/button_default_round_corners"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onClickEnterLetterInWord"
+                    android:padding="2dp"
+                    android:text="П" />
+
+                <TextView
+                    android:id="@+id/b18Letter"
+                    style="@style/bLetters"
+                    android:layout_width="25dp"
+                    android:layout_height="42dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/button_default_round_corners"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onClickEnterLetterInWord"
+                    android:padding="2dp"
+                    android:text="Р" />
+
+                <TextView
+                    android:id="@+id/b19Letter"
+                    style="@style/bLetters"
+                    android:layout_width="25dp"
+                    android:layout_height="42dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/button_default_round_corners"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onClickEnterLetterInWord"
+                    android:padding="2dp"
+                    android:text="О" />
+
+                <TextView
+                    android:id="@+id/b20Letter"
+                    style="@style/bLetters"
+                    android:layout_width="25dp"
+                    android:layout_height="42dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/button_default_round_corners"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onClickEnterLetterInWord"
+                    android:padding="2dp"
+                    android:text="Л" />
+
+                <TextView
+                    android:id="@+id/b21Letter"
+                    style="@style/bLetters"
+                    android:layout_width="25dp"
+                    android:layout_height="42dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/button_default_round_corners"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onClickEnterLetterInWord"
+                    android:padding="2dp"
+                    android:text="Д" />
+
+                <TextView
+                    android:id="@+id/b22Letter"
+                    style="@style/bLetters"
+                    android:layout_width="25dp"
+                    android:layout_height="42dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/button_default_round_corners"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onClickEnterLetterInWord"
+                    android:padding="2dp"
+                    android:text="Ж" />
+
+                <TextView
+                    android:id="@+id/b23Letter"
+                    style="@style/bLetters"
+                    android:layout_width="25dp"
+                    android:layout_height="42dp"
+                    android:layout_marginVertical="3dp"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/button_default_round_corners"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onClickEnterLetterInWord"
+                    android:padding="2dp"
+                    android:text="Э" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/b24Letter"
+                    style="@style/bLetters"
+                    android:layout_width="25dp"
+                    android:layout_height="42dp"
+                    android:layout_marginVertical="3dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/button_default_round_corners"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onClickEnterLetterInWord"
+                    android:padding="2dp"
+                    android:text="Я" />
+
+                <TextView
+                    android:id="@+id/b25Letter"
+                    style="@style/bLetters"
+                    android:layout_width="25dp"
+                    android:layout_height="42dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/button_default_round_corners"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onClickEnterLetterInWord"
+                    android:padding="2dp"
+                    android:text="Ч" />
+
+                <TextView
+                    android:id="@+id/b26Letter"
+                    style="@style/bLetters"
+                    android:layout_width="25dp"
+                    android:layout_height="42dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/button_default_round_corners"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onClickEnterLetterInWord"
+                    android:padding="2dp"
+                    android:text="С" />
+
+                <TextView
+                    android:id="@+id/b27Letter"
+                    style="@style/bLetters"
+                    android:layout_width="25dp"
+                    android:layout_height="42dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/button_default_round_corners"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onClickEnterLetterInWord"
+                    android:padding="2dp"
+                    android:text="М" />
+
+                <TextView
+                    android:id="@+id/b28Letter"
+                    style="@style/bLetters"
+                    android:layout_width="25dp"
+                    android:layout_height="42dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/button_default_round_corners"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onClickEnterLetterInWord"
+                    android:padding="2dp"
+                    android:text="И" />
+
+                <TextView
+                    android:id="@+id/b29Letter"
+                    style="@style/bLetters"
+                    android:layout_width="25dp"
+                    android:layout_height="42dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/button_default_round_corners"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onClickEnterLetterInWord"
+                    android:padding="2dp"
+                    android:text="Т" />
+
+                <TextView
+                    android:id="@+id/b30Letter"
+                    style="@style/bLetters"
+                    android:layout_width="25dp"
+                    android:layout_height="42dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/button_default_round_corners"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onClickEnterLetterInWord"
+                    android:padding="2dp"
+                    android:text="Ь" />
+
+                <TextView
+                    android:id="@+id/b31Letter"
+                    style="@style/bLetters"
+                    android:layout_width="25dp"
+                    android:layout_height="42dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/button_default_round_corners"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onClickEnterLetterInWord"
+                    android:padding="2dp"
+                    android:text="Б" />
+
+                <TextView
+                    android:id="@+id/b32Letter"
+                    style="@style/bLetters"
+                    android:layout_width="25dp"
+                    android:layout_height="42dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/button_default_round_corners"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onClickEnterLetterInWord"
+                    android:padding="2dp"
+                    android:text="Ю" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="81dp"
+                    android:layout_height="42dp"
+                    android:layout_marginVertical="3dp"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_default_round_corners"
+                    android:clickable="true"
+                    android:elevation="2dp"
+                    android:focusable="true"
+                    android:onClick="onClickDeleteLetterInWord"
+                    android:padding="2dp"
+                    app:srcCompat="@drawable/backspace_icon" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="6dp"
+                    android:background="@drawable/button_default_round_corners"
+                    android:clickable="true"
+                    android:elevation="2dp"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:onClick="onClickCheckWord"
+                    android:padding="6dp"
+                    android:text="@string/check_word"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

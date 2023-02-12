@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name" translatable="false">Words</string>
+    <string name="app_title_in_game">ВОРДС</string>
+    <string name="check_word">ПРОВЕРИТЬ СЛОВО</string>
+    <string name="no_such_word">В словаре игры нет такого слова, попробуйте другое!</string>
+    <string name="not_all_letters_entered">В слове не хватает букв!</string>
+    <string name="word_is_selected">Слово загадано!</string>
+    <string name="game_resumed">Игра восстановлена!</string>
+    <string name="word_is_guessed">Слово отгадано!</string>
+    <string name="word_is_not_guessed">Вам не удалось отгадать слово</string>
+    <string name="attempts_count">Количество попыток: </string>
+    <string name="from_six"> из 6</string>
+    <string name="search_word">Загаданное слово:</string>
+    <string name="next_word">Следующее слово</string>
+    <string name="prompt_letter_in_word">В этом слове точно есть буква</string>
+    <string name="max_prompts_count">У Вас максимальное количество подсказок</string>
+    <string name="games_played_title">Сыграно игр</string>
+    <string name="games_won_title">Игр выиграно</string>
+    <string name="percent_games_won_title">Процент побед</string>
+    <string name="average_tries_count">Среднее количество попыток отгадать слово</string>
+    <string name="distribution_of_wins">Распределение выигрышных попыток</string>
+    <string name="statistics_title">Статистика</string>
+    <string name="achievements_title">Достижения</string>
+    <string name="prompts_used">Использовано подсказок</string>
+    <string name="no_prompts">Подсказки закончились. Посмотреть рекламу чтобы получить еще?</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="all_needed_letters_guessed">Все нужные буквы отгаданы!</string>
+    <string name="splash_screen_string">Words game: угадай слово!</string>
+    <string name="prompt_received">Подсказка получена</string>
+</resources>

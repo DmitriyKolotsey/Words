@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/AndroidProjects/Words/app/src/main/res/layout/fragment_no_prompts.xml" value="0.20854700854700856" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable-v24/ic_baseline_achieve_false.xml" value="0.249" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.249" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable-v24/textview_another_position.xml" value="0.2375" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable-v24/textview_bottomleft_another_position_round_corner.xml" value="0.2375" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable-v24/textview_bottomleft_correct_round_corner.xml" value="0.2375" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable-v24/textview_bottomleft_incorrect_round_corner.xml" value="0.2375" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable-v24/textview_bottomleft_round_corner.xml" value="0.2375" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable-v24/textview_bottomright_another_position_round_corner.xml" value="0.2375" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable-v24/textview_bottomright_correct_round_corner.xml" value="0.2375" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable-v24/textview_bottomright_incorrect_round_corner.xml" value="0.2375" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable-v24/textview_bottomright_round_corner.xml" value="0.2375" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable-v24/textview_default.xml" value="0.2375" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable-v24/textview_incorrect.xml" value="0.2375" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable-v24/textview_topleft_another_position_round_corner.xml" value="0.2375" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable-v24/textview_topleft_correct_round_corner.xml" value="0.2375" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable-v24/textview_topleft_incorrect_round_corner.xml" value="0.2375" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable-v24/textview_topright_another_position_round_corner.xml" value="0.2375" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable-v24/textview_topright_correct_round_corner.xml" value="0.2375" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable-v24/textview_topright_incorrect_round_corner.xml" value="0.2375" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable-v24/textview_topright_round_corner.xml" value="0.2375" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable/button_another_position_round_corners.xml" value="0.2375" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable/button_correct_round_corners.xml" value="0.2375" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable/button_default_round_corners.xml" value="0.249" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable/button_incorrect_round_corners.xml" value="0.2375" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable/button_round_corner.xml" value="0.2375" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable/button_round_corners.xml" value="0.2375" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable/fragment_button_rounded_corners.xml" value="0.2375" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable/fragment_rounded_corners.xml" value="0.2375" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable/ic_achieve_play_25_games.xml" value="0.249" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable/ic_baseline_achieve_false.xml" value="0.196" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable/ic_baseline_achieve_true.xml" value="0.196" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.249" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable/ic_baseline_done_24.xml" value="0.249" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable/ic_baseline_help.xml" value="0.249" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable/ic_baseline_statistic.xml" value="0.249" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable/ic_spash_screen_foreground.xml" value="0.249" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable/ic_trophy.xml" value="0.249" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable/ic_untitled__1_.xml" value="0.249" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable/round_stat_layouts.xml" value="0.249" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable/round_stat_layouts_correct.xml" value="0.196" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable/textview_correct.xml" value="0.2375" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable/textview_count_prompts_oval.xml" value="0.249" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable/textview_count_prompts_reound_corners.xml" value="0.249" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable/textview_count_prompts_rounded.xml" value="0.249" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable/textview_round_corners.xml" value="0.25" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/drawable/toast_round_corners.xml" value="0.2375" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/layout/achievement_list_item.xml" value="0.3" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/layout/activity_achievements.xml" value="0.22" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/layout/activity_splash_screen.xml" value="0.30085470085470084" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/layout/activity_statistics.xml" value="0.33" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/layout/custom_toast.xml" value="0.30085470085470084" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/layout/fragment__no_prompts.xml" value="0.3" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/layout/fragment_end_game.xml" value="0.25" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/layout/fragment_word_is_guessed.xml" value="0.30085470085470084" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/layout/fragment_word_is_not_guessed.xml" value="0.30085470085470084" />
+        <entry key="..\:/Users/kolotsey/AndroidStudioProjects/Words/app/src/main/res/mipmap-anydpi-v26/ic_splash_screen.xml" value="0.249" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
